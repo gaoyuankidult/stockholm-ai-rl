@@ -1,5 +1,5 @@
-# Stockholm AI RL Groups Implementatons
-> In Stockholm AI reinforcement learning(RL) group, we discuss the RL algorithms and their applications. In order to understand the algorithms fully, we focus on the theoratical and practical details of each algorithm including classic ones and deep ones. This repo is for our internal communication purpose.
+# Stockholm AI RL Group Implementations
+> In Stockholm AI reinforcement learning(RL) group, we discuss RL algorithms and their applications. In order to understand the algorithms fully, we focus on the theoratical and practical details of each algorithm including classic ones and deep ones. This repo is for our internal communication purpose.
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
