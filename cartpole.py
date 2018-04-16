@@ -4,13 +4,13 @@ from monte_carlo_agent import MonteCarloAgent
 from tabular_q_agent import TabularQAgent
 
 class Constants():
-    epochs = 500000
+    epochs = 2000
     iters = 1000
 
 env = gym.make('CartPole-v0')
 env.reset()
 constants = Constants()
-agent = MonteCarloAgent(env.action_space, env.observation_space)
+agent = TabularQAgent(env.action_space, env.observation_space)
 
 done = False
 reward = 0
