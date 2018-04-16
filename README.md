@@ -1,11 +1,11 @@
 # Stockholm AI RL Groups Implementatons
-> In Stockholm AI reinforcement learning(RL) group, we discuss the RL algorithms and their applications. In order to understand the algorithms fully, We focus on the theoratical and practical details of each algorithm including classiones and deep ones. This repo is for our internal communication purpose.
+> In Stockholm AI reinforcement learning(RL) group, we discuss the RL algorithms and their applications. In order to understand the algorithms fully, we focus on the theoratical and practical details of each algorithm including classic ones and deep ones. This repo is for our internal communication purpose.
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-We implemente our algorithms using gym and keras and after which we test the algorithms on the simple cartpole example. The repo is implemented to understand the algorithm rather then received the good performance on this specific problem. We try to write in a clear way.
+We implemented our algorithms using gym and keras and after which we tested the algorithms on the simple cartpole example. The repo is implemented for people to understand the algorithm rather then receiving a good performance on this specific problem. We try to write the code in a clear way.
 
 ## Usage example
 
