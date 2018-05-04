@@ -2,15 +2,19 @@ import gym
 from sarsa_agent import SARSAAgent
 from monte_carlo_agent import MonteCarloAgent
 from tabular_q_agent import TabularQAgent
+from value_iteration_agent import ValueIterationAgent
+from ppo_agent import PPOAgent
 
 class Constants():
-    epochs = 2000
+    epochs = 200000
     iters = 1000
 
 env = gym.make('CartPole-v0')
 env.reset()
 constants = Constants()
-agent = TabularQAgent(env.action_space, env.observation_space)
+agent = PPOAgent(env.action_space,
+                 env.observation_space,
+                 episodes=constants.epochs)
 
 done = False
 reward = 0
@@ -21,13 +25,15 @@ for i_episode in xrange(constants.epochs):
     rewards = []
     for t in range(constants.iters):
         action = agent.act(observation, i_episode)
-        observation, reward, done, _ = env.step(action)
-        agent.learn(reward, observation, i_episode)
+        next_observation, reward, done, _ = env.step(action)
+        agent.learn(reward, next_observation, i_episode)
+        observation = next_observation
+        
         if done:
             history.append(t+1)
             break
     agent.review(i_episode)
 
-    if i_episode%200 == 0:
-        print "Episode finised on average in {} timesteps for last 200 runs.".format(sum(history)/200.)
+    if i_episode%500 == 0:
+        print "Episode finised on average in {} timesteps for last 500 runs.".format(sum(history)/500.)
         history = []
