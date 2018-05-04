@@ -1,10 +1,6 @@
 # Stockholm AI RL Group Implementations
 > In Stockholm AI reinforcement learning(RL) group, we discuss RL algorithms and their applications. In order to understand the algorithms fully, we focus on the theoratical and practical details of each algorithm including classic ones and deep ones. This repo is for our internal communication purpose.
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
 We implemented our algorithms using gym and keras and after which we tested the algorithms on the simple cartpole example. The repo is implemented for people to understand the algorithm rather then receiving a good performance on this specific problem. We try to write the code in a clear way.
 
 ## Usage example
@@ -15,6 +11,8 @@ python cartpole.py
 
 ## Release History
 
+* 0.2.2
+	* Implemented the Proximal Policy Optimization method
 * 0.2.1
     * Implemented Monte Carlo method
 * 0.2.0
