@@ -2,7 +2,6 @@ import gym
 from sarsa_agent import SARSAAgent
 from monte_carlo_agent import MonteCarloAgent
 from tabular_q_agent import TabularQAgent
-from value_iteration_agent import ValueIterationAgent
 from ppo_agent import PPOAgent
 
 class Constants():
